@@ -71,180 +71,234 @@
             //시작좌표 1,1
 
             //사각블럭
-            block[0].b = new int[4, 4];
-            block[0].b[0, 0] = 0; block[0].b[0, 1] = 0; block[0].b[0, 2] = 0; block[0].b[0, 3] = 0;
-            block[0].b[1, 0] = 0; block[0].b[1, 1] = 1; block[0].b[1, 2] = 1; block[0].b[1, 3] = 0;
-            block[0].b[2, 0] = 0; block[0].b[2, 1] = 1; block[0].b[2, 2] = 1; block[0].b[2, 3] = 0;
-            block[0].b[3, 0] = 0; block[0].b[3, 1] = 0; block[0].b[3, 2] = 0; block[0].b[3, 3] = 0;
+
+
+            block[0].b = new int[4, 4]
+            {
+            { 0, 0, 0, 0 },
+            { 0, 1, 1, 0 },
+            { 0, 1, 1, 0 },
+            { 0, 0, 0, 0 },
+            };
+
 
 
             //작대기블럭1
-            block[1].b = new int[4, 4];
-            block[1].b[0, 0] = 0; block[1].b[0, 1] = 0; block[1].b[0, 2] = 0; block[1].b[0, 3] = 0;
-            block[1].b[1, 0] = 1; block[1].b[1, 1] = 1; block[1].b[1, 2] = 1; block[1].b[1, 3] = 1;
-            block[1].b[2, 0] = 0; block[1].b[2, 1] = 0; block[1].b[2, 2] = 0; block[1].b[2, 3] = 0;
-            block[1].b[3, 0] = 0; block[1].b[3, 1] = 0; block[1].b[3, 2] = 0; block[1].b[3, 3] = 0;
-
+            block[1].b = new int[4, 4]
+            {
+            { 0, 0, 0, 0 },
+            { 1, 1, 1, 1 },
+            { 0, 0, 0, 0 },
+            { 0, 0, 0, 0 },
+            };
 
             //작대기블럭2
-            block[2].b = new int[4, 4];
-            block[2].b[0, 0] = 0; block[2].b[0, 1] = 1; block[2].b[0, 2] = 0; block[2].b[0, 3] = 0;
-            block[2].b[1, 0] = 0; block[2].b[1, 1] = 1; block[2].b[1, 2] = 0; block[2].b[1, 3] = 0;
-            block[2].b[2, 0] = 0; block[2].b[2, 1] = 1; block[2].b[2, 2] = 0; block[2].b[2, 3] = 0;
-            block[2].b[3, 0] = 0; block[2].b[3, 1] = 1; block[2].b[3, 2] = 0; block[2].b[3, 3] = 0;
+
+            block[2].b = new int[4, 4]
+            {
+            { 0, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            };
 
 
             //T블럭1
 
-            block[3].b = new int[4, 4];
-            block[3].b[0, 0] = 0; block[3].b[0, 1] = 0; block[3].b[0, 2] = 0; block[3].b[0, 3] = 0;
-            block[3].b[1, 0] = 1; block[3].b[1, 1] = 1; block[3].b[1, 2] = 1; block[3].b[1, 3] = 0;
-            block[3].b[2, 0] = 0; block[3].b[2, 1] = 1; block[3].b[2, 2] = 0; block[3].b[2, 3] = 0;
-            block[3].b[3, 0] = 0; block[3].b[3, 1] = 0; block[3].b[3, 2] = 0; block[3].b[3, 3] = 0;
+
+            block[3].b = new int[4, 4]
+         {
+            { 0, 0, 0, 0 },
+            { 1, 1, 1, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
+
 
             //T블럭2
 
-            block[4].b = new int[4, 4];
-            block[4].b[0, 0] = 0; block[4].b[0, 1] = 1; block[4].b[0, 2] = 0; block[4].b[0, 3] = 0;
-            block[4].b[1, 0] = 0; block[4].b[1, 1] = 1; block[4].b[1, 2] = 1; block[4].b[1, 3] = 0;
-            block[4].b[2, 0] = 0; block[4].b[2, 1] = 1; block[4].b[2, 2] = 0; block[4].b[2, 3] = 0;
-            block[4].b[3, 0] = 0; block[4].b[3, 1] = 0; block[4].b[3, 2] = 0; block[4].b[3, 3] = 0;
+
+
+            block[4].b = new int[4, 4]
+         {
+            { 0, 1, 0, 0 },
+            { 0, 1, 1, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //T블럭3
 
-            block[5].b = new int[4, 4];
-            block[5].b[0, 0] = 0; block[5].b[0, 1] = 1; block[5].b[0, 2] = 0; block[5].b[0, 3] = 0;
-            block[5].b[1, 0] = 1; block[5].b[1, 1] = 1; block[5].b[1, 2] = 1; block[5].b[1, 3] = 0;
-            block[5].b[2, 0] = 0; block[5].b[2, 1] = 0; block[5].b[2, 2] = 0; block[5].b[2, 3] = 0;
-            block[5].b[3, 0] = 0; block[5].b[3, 1] = 0; block[5].b[3, 2] = 0; block[5].b[3, 3] = 0;
+
+            block[5].b = new int[4, 4]
+         {
+            { 0, 1, 0, 0 },
+            { 1, 1, 1, 0 },
+            { 0, 0, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //T블럭4
 
-            block[6].b = new int[4, 4];
-            block[6].b[0, 0] = 0; block[6].b[0, 1] = 1; block[6].b[0, 2] = 0; block[6].b[0, 3] = 0;
-            block[6].b[1, 0] = 1; block[6].b[1, 1] = 1; block[6].b[1, 2] = 0; block[6].b[1, 3] = 0;
-            block[6].b[2, 0] = 0; block[6].b[2, 1] = 1; block[6].b[2, 2] = 0; block[6].b[2, 3] = 0;
-            block[6].b[3, 0] = 0; block[6].b[3, 1] = 0; block[6].b[3, 2] = 0; block[6].b[3, 3] = 0;
+
+            block[6].b = new int[4, 4]
+         {
+            { 0, 1, 0, 0 },
+            { 1, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
 
             //Z블럭1
 
-            block[7].b = new int[4, 4];
-            block[7].b[0, 0] = 0; block[7].b[0, 1] = 0; block[7].b[0, 2] = 0; block[7].b[0, 3] = 0;
-            block[7].b[1, 0] = 1; block[7].b[1, 1] = 1; block[7].b[1, 2] = 0; block[7].b[1, 3] = 0;
-            block[7].b[2, 0] = 0; block[7].b[2, 1] = 1; block[7].b[2, 2] = 1; block[7].b[2, 3] = 0;
-            block[7].b[3, 0] = 0; block[7].b[3, 1] = 0; block[7].b[3, 2] = 0; block[7].b[3, 3] = 0;
+            block[7].b = new int[4, 4]
+         {
+            { 0, 0, 0, 0 },
+            { 1, 1, 0, 0 },
+            { 0, 1, 1, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
 
             //Z블럭2
 
-            block[8].b = new int[4, 4];
-            block[8].b[0, 0] = 0; block[8].b[0, 1] = 1; block[8].b[0, 2] = 0; block[8].b[0, 3] = 0;
-            block[8].b[1, 0] = 1; block[8].b[1, 1] = 1; block[8].b[1, 2] = 0; block[8].b[1, 3] = 0;
-            block[8].b[2, 0] = 1; block[8].b[2, 1] = 0; block[8].b[2, 2] = 0; block[8].b[2, 3] = 0;
-            block[8].b[3, 0] = 0; block[8].b[3, 1] = 0; block[8].b[3, 2] = 0; block[8].b[3, 3] = 0;
+
+
+            block[8].b = new int[4, 4]
+         {
+            { 0, 1, 0, 0 },
+            { 1, 1, 0, 0 },
+            { 1, 0, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //S블럭1
 
-            block[9].b = new int[4, 4];
-            block[9].b[0, 0] = 0; block[9].b[0, 1] = 0; block[9].b[0, 2] = 0; block[9].b[0, 3] = 0;
-            block[9].b[1, 0] = 0; block[9].b[1, 1] = 1; block[9].b[1, 2] = 1; block[9].b[1, 3] = 0;
-            block[9].b[2, 0] = 1; block[9].b[2, 1] = 1; block[9].b[2, 2] = 0; block[9].b[2, 3] = 0;
-            block[9].b[3, 0] = 0; block[9].b[3, 1] = 0; block[9].b[3, 2] = 0; block[9].b[3, 3] = 0;
+
+            block[9].b = new int[4, 4]
+         {
+            { 0, 0, 0, 0 },
+            { 0, 1, 1, 0 },
+            { 1, 1, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
+
 
 
             //S블럭2
 
-            block[10].b = new int[4, 4];
-            block[10].b[0, 0] = 1; block[10].b[0, 1] = 0; block[10].b[0, 2] = 0; block[10].b[0, 3] = 0;
-            block[10].b[1, 0] = 1; block[10].b[1, 1] = 1; block[10].b[1, 2] = 0; block[10].b[1, 3] = 0;
-            block[10].b[2, 0] = 0; block[10].b[2, 1] = 1; block[10].b[2, 2] = 0; block[10].b[2, 3] = 0;
-            block[10].b[3, 0] = 0; block[10].b[3, 1] = 0; block[10].b[3, 2] = 0; block[10].b[3, 3] = 0;
 
+
+            block[10].b = new int[4, 4]
+         {
+            { 1, 0, 0, 0 },
+            { 1, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //J블럭1
 
-            block[11].b = new int[4, 4];
-            block[11].b[0, 0] = 0; block[11].b[0, 1] = 0; block[11].b[0, 2] = 0; block[11].b[0, 3] = 0;
-            block[11].b[1, 0] = 1; block[11].b[1, 1] = 1; block[11].b[1, 2] = 1; block[11].b[1, 3] = 0;
-            block[11].b[2, 0] = 0; block[11].b[2, 1] = 0; block[11].b[2, 2] = 1; block[11].b[2, 3] = 0;
-            block[11].b[3, 0] = 0; block[11].b[3, 1] = 0; block[11].b[3, 2] = 0; block[11].b[3, 3] = 0;
 
+            block[11].b = new int[4, 4]
+         {
+            { 0, 0, 0, 0 },
+            { 1, 1, 1, 0 },
+            { 0, 0, 1, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //J블럭2
 
-            block[12].b = new int[4, 4];
-            block[12].b[0, 0] = 0; block[12].b[0, 1] = 1; block[12].b[0, 2] = 1; block[12].b[0, 3] = 0;
-            block[12].b[1, 0] = 0; block[12].b[1, 1] = 1; block[12].b[1, 2] = 0; block[12].b[1, 3] = 0;
-            block[12].b[2, 0] = 0; block[12].b[2, 1] = 1; block[12].b[2, 2] = 0; block[12].b[2, 3] = 0;
-            block[12].b[3, 0] = 0; block[12].b[3, 1] = 0; block[12].b[3, 2] = 0; block[12].b[3, 3] = 0;
 
+
+            block[12].b = new int[4, 4]
+         {
+            { 0, 1, 1, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //J블럭3
 
-            block[13].b = new int[4, 4];
-            block[13].b[0, 0] = 1; block[13].b[0, 1] = 0; block[13].b[0, 2] = 0; block[13].b[0, 3] = 0;
-            block[13].b[1, 0] = 1; block[13].b[1, 1] = 1; block[13].b[1, 2] = 1; block[13].b[1, 3] = 0;
-            block[13].b[2, 0] = 0; block[13].b[2, 1] = 0; block[13].b[2, 2] = 0; block[13].b[2, 3] = 0;
-            block[13].b[3, 0] = 0; block[13].b[3, 1] = 0; block[13].b[3, 2] = 0; block[13].b[3, 3] = 0;
 
+            block[13].b = new int[4, 4]
+         {
+            { 1, 0, 0, 0 },
+            { 1, 1, 1, 0 },
+            { 0, 0, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
             //J블럭4
 
-            block[14].b = new int[4, 4];
-            block[14].b[0, 0] = 0; block[14].b[0, 1] = 1; block[14].b[0, 2] = 0; block[14].b[0, 3] = 0;
-            block[14].b[1, 0] = 0; block[14].b[1, 1] = 1; block[14].b[1, 2] = 0; block[14].b[1, 3] = 0;
-            block[14].b[2, 0] = 1; block[14].b[2, 1] = 1; block[14].b[2, 2] = 0; block[14].b[2, 3] = 0;
-            block[14].b[3, 0] = 0; block[14].b[3, 1] = 0; block[14].b[3, 2] = 0; block[14].b[3, 3] = 0;
 
+            block[14].b = new int[4, 4]
+         {
+            { 0, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            { 1, 1, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //L블럭1
 
-            block[15].b = new int[4, 4];
-            block[15].b[0, 0] = 0; block[15].b[0, 1] = 0; block[15].b[0, 2] = 0; block[15].b[0, 3] = 0;
-            block[15].b[1, 0] = 1; block[15].b[1, 1] = 1; block[15].b[1, 2] = 1; block[15].b[1, 3] = 0;
-            block[15].b[2, 0] = 1; block[15].b[2, 1] = 0; block[15].b[2, 2] = 0; block[15].b[2, 3] = 0;
-            block[15].b[3, 0] = 0; block[15].b[3, 1] = 0; block[15].b[3, 2] = 0; block[15].b[3, 3] = 0;
 
+            block[15].b = new int[4, 4]
+         {
+            { 0, 0, 0, 0 },
+            { 1, 1, 1, 0 },
+            { 1, 0, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //L블럭2
 
-            block[16].b = new int[4, 4];
-            block[16].b[0, 0] = 0; block[16].b[0, 1] = 1; block[16].b[0, 2] = 0; block[16].b[0, 3] = 0;
-            block[16].b[1, 0] = 0; block[16].b[1, 1] = 1; block[16].b[1, 2] = 0; block[16].b[1, 3] = 0;
-            block[16].b[2, 0] = 0; block[16].b[2, 1] = 1; block[16].b[2, 2] = 1; block[16].b[2, 3] = 0;
-            block[16].b[3, 0] = 0; block[16].b[3, 1] = 0; block[16].b[3, 2] = 0; block[16].b[3, 3] = 0;
 
+            block[16].b = new int[4, 4]
+         {
+            { 0, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 1, 1, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //L블럭3
 
-            block[17].b = new int[4, 4];
-            block[17].b[0, 0] = 0; block[17].b[0, 1] = 0; block[17].b[0, 2] = 1; block[17].b[0, 3] = 0;
-            block[17].b[1, 0] = 1; block[17].b[1, 1] = 1; block[17].b[1, 2] = 1; block[17].b[1, 3] = 0;
-            block[17].b[2, 0] = 0; block[17].b[2, 1] = 0; block[17].b[2, 2] = 0; block[17].b[2, 3] = 0;
-            block[17].b[3, 0] = 0; block[17].b[3, 1] = 0; block[17].b[3, 2] = 0; block[17].b[3, 3] = 0;
 
+            block[17].b = new int[4, 4]
+         {
+            { 0, 0, 1, 0 },
+            { 1, 1, 1, 0 },
+            { 0, 0, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
 
             //L블럭4
 
-            block[18].b = new int[4, 4];
-            block[18].b[0, 0] = 1; block[18].b[0, 1] = 1; block[18].b[0, 2] = 0; block[18].b[0, 3] = 0;
-            block[18].b[1, 0] = 0; block[18].b[1, 1] = 1; block[18].b[1, 2] = 0; block[18].b[1, 3] = 0;
-            block[18].b[2, 0] = 0; block[18].b[2, 1] = 1; block[18].b[2, 2] = 0; block[18].b[2, 3] = 0;
-            block[18].b[3, 0] = 0; block[18].b[3, 1] = 0; block[18].b[3, 2] = 0; block[18].b[3, 3] = 0;
 
+
+            block[18].b = new int[4, 4]
+         {
+            { 1, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 1, 0, 0 },
+            { 0, 0, 0, 0 },
+         };
 
         }
 
@@ -938,7 +992,7 @@
             Console.ResetColor();
 
             Console.WriteLine($"\n                                       점수 {score}");
-            
+
             Console.ReadKey(true);
         }
 
@@ -983,7 +1037,7 @@
 
             }
 
-           
+
             //잠시 기다렸다가
             Thread.Sleep(2000);
             //게임오버 씬 출력
